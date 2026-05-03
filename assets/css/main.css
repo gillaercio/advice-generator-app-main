@@ -1,0 +1,46 @@
+body {
+  display: grid;
+  /* justify-content: center; */
+  align-items: center;
+  height: 100vh;
+  background-color: var(--Blue-950);
+}
+
+.main {
+  /* display: flex; */
+  justify-self: center;
+  /* align-content: space-between; */
+  /* align-items: ; */
+  /* height: 100%; */
+  width: 100%;
+  max-width: 375px;
+  padding: 2rem;
+  background-color: var(--Blue-900);
+  border-radius: 10px;
+}
+
+.advice {
+  display: grid;
+  gap: 2rem;
+  justify-content: center;
+  text-align: center;
+}
+
+.advice__id {
+  font: var(--text);
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  color: var(--Green-300);
+}
+
+.advice__text {
+  font: var(--text-lg);
+  color: var(--Blue-200);
+}
+
+.advice__divider {
+  background-image: url("../images/pattern-divider-mobile.svg");
+  background-repeat: no-repeat;
+  height: 35px;
+  width: 100%;
+}
