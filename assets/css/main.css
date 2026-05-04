@@ -12,9 +12,10 @@ body {
   /* align-content: space-between; */
   /* align-items: ; */
   /* height: 100%; */
-  width: 100%;
-  max-width: 375px;
-  padding: 2rem;
+  /* width: 100%; */
+  /* max-width: 375px; */
+  width: min(100%, 335px);
+  padding: 2.4rem;
   background-color: var(--Blue-900);
   border-radius: 10px;
 }
@@ -24,6 +25,7 @@ body {
   gap: 2rem;
   justify-content: center;
   text-align: center;
+  position: relative;
 }
 
 .advice__id {
@@ -43,4 +45,29 @@ body {
   background-repeat: no-repeat;
   height: 35px;
   width: 100%;
+  margin-bottom: 2rem;
+}
+
+.advice__button {
+  width: 7rem;
+  padding: 2rem;
+  background-color: var(--Green-300);
+  border: none;
+  border-radius: 50%;
+  position: absolute;
+  left: 115px;
+  bottom: -60px;
+  transition: box-shadows 0.3s ease, transform 0.2s ease;
+  cursor: pointer;
+}
+
+.advice__button:hover {
+  box-shadow:
+    0 0 15px var(--Green-300),
+    0 0 30px var(--Green-300);
+  transform: scale(1.05);
+}
+
+.visually-hidden {
+  display: none;
 }
