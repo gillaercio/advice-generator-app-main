@@ -1,21 +1,14 @@
 body {
   display: grid;
-  /* justify-content: center; */
   align-items: center;
   height: 100vh;
   background-color: var(--Blue-950);
 }
 
 .main {
-  /* display: flex; */
   justify-self: center;
-  /* align-content: space-between; */
-  /* align-items: ; */
-  /* height: 100%; */
-  /* width: 100%; */
-  /* max-width: 375px; */
   width: min(100%, 335px);
-  padding: 2.4rem;
+  padding: 3rem;
   background-color: var(--Blue-900);
   border-radius: 10px;
 }
@@ -41,21 +34,23 @@ body {
 }
 
 .advice__divider {
-  background-image: url("../images/pattern-divider-mobile.svg");
-  background-repeat: no-repeat;
   height: 35px;
   width: 100%;
   margin-bottom: 2rem;
+  background-image: url("../images/pattern-divider-mobile.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .advice__button {
-  width: 7rem;
+  width: 70px;
+  height: 70px;
   padding: 2rem;
   background-color: var(--Green-300);
   border: none;
   border-radius: 50%;
   position: absolute;
-  left: 115px;
+  left: 104px;
   bottom: -60px;
   transition: box-shadows 0.3s ease, transform 0.2s ease;
   cursor: pointer;
@@ -65,9 +60,49 @@ body {
   box-shadow:
     0 0 15px var(--Green-300),
     0 0 30px var(--Green-300);
-  transform: scale(1.05);
+}
+
+.advice__button img {
+  display: flex;
+  justify-self: center;
+  align-self: center;
 }
 
 .visually-hidden {
   display: none;
+}
+
+@media screen and (min-width: 1024px) {
+  .main {
+    width: 740px;
+    padding: 5rem;
+  }
+
+  .advice {
+    gap: 4rem;
+  }
+
+  .advice__id {
+    font-size: clamp(1.4rem, 2vw, 1.8rem);
+  }
+
+  .advice__text {
+    font-size: clamp(2.8rem, 4vw, 4rem);
+  }
+
+  .advice__divider {
+    margin-bottom: 4rem;
+    background-image: url("../images/pattern-divider-desktop.svg");
+  }
+
+  .advice__button {
+    width: 100px;
+    height: 100px;
+    left: 270px;
+    bottom: -100px;
+  }
+
+  .advice__button img {
+    height: 35px;
+  }
 }
