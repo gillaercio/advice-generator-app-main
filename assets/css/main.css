@@ -16,8 +16,9 @@ body {
 
 .advice {
   display: grid;
+  justify-items: center;
   gap: 2rem;
-  justify-content: center;
+  width: 100%;
   text-align: center;
   position: relative;
 }
@@ -27,6 +28,10 @@ body {
   text-transform: uppercase;
   letter-spacing: 4px;
   color: var(--Green-300);
+}
+
+#advice-text {
+  transition: opacity 0.3s ease;
 }
 
 .advice__text {
@@ -51,9 +56,10 @@ body {
   border: none;
   border-radius: 50%;
   position: absolute;
-  left: 104px;
+  left: 50%;
   bottom: -60px;
   transition: box-shadows 0.3s ease, transform 0.2s ease;
+  transform: translateX(-50%);
   cursor: pointer;
 }
 
@@ -99,7 +105,6 @@ body {
   .advice__button {
     width: 100px;
     height: 100px;
-    left: 270px;
     bottom: -100px;
   }
 
