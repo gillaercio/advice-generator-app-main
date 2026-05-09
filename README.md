@@ -49,7 +49,7 @@ These are my screenshots showing how the project turned out.
 
 ### What I learned
 
-I took advantage of this project to practice using **BEM** with HTML, **Reset CSS** and  **Variables** with **CSS** and **DOM** and **APP consumption** with **JavaScript**:
+I took advantage of this project to practice using **BEM** with HTML, **Reset CSS** and  **Variables** with **CSS** and **DOM** and **API consumption** with **JavaScript**:
 
 BEM (Block Element Modifier)
 
@@ -102,7 +102,7 @@ Variables
 }
 ```
 
-APP Consumption and DOM
+API Consumption and DOM
 
 ```js
 //...
